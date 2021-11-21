@@ -96,7 +96,8 @@ p1 <- st_cast(p1, "MULTIPOLYGON")
 
 p2 <- sites_sf[unlist(st_intersects(p1, sites_sf)),]
 p1$site <- p2$site
-st_write(p1, 'shp/voroni.shp', append = TRUE)
+p1$id <- p2$id
+st_write(p1, 'shp/voroni.shp')
 
 ## mapview makes it easy to see the plot on a zoomable map
 library(mapview)
