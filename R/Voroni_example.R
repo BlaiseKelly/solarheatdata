@@ -1,5 +1,6 @@
 library(reshape2)
 library(dplyr)
+library(sf)
 
 ##define coordinate systems
 latlong = "+init=epsg:4326"
@@ -52,11 +53,14 @@ download.file(url, destfile ='dk.zip', mode='wb')
 ## unzip downloaded file
 unzip(zipfile = 'dk.zip', exdir = 'shp')
 
-## read in 1km file, join all polygons together and transform to latlong
+## read in 1km file, join all polygons together and reduce by 14km (as EEA file is oversize) and transform to latlong
 dk_shp <- st_read('shp/dk_1km.shp') %>% 
   st_union %>% 
-  st_transform(latlong)
+  st_transform(28992) %>%
+  st_buffer(-14000) %>% ## negative buffer as shape file overlaps sweden and germany
+  st_transform(4326)
 
+  
 ## define url EU coastline
 europe_url <- 'https://www.eea.europa.eu/data-and-maps/data/eea-coastline-for-analysis-1/gis-data/europe-coastline-shapefile/at_download/file'
 ##download
@@ -68,6 +72,9 @@ unzip(zipfile = 'eu.zip', exdir = 'shp')
 ## read in eu coastline shp and convert to latlong
 eu_shp <- st_read('shp/Europe_coastline_poly.shp') %>% 
   st_transform(latlong)
+
+unlink('eu.zip')
+unlink('dk.zip')
 
 ## trim eu coastline to Danish boundaries, define it as a multipolygon and join all polygons,  transform to rdnew
 dk_rd <- eu_shp %>% 
@@ -87,15 +94,12 @@ p1 <- st_as_sf(st_intersection(st_cast(v), dk_rd), crs = 28992)
 ## tell R that the geometry is polygons
 p1 <- st_cast(p1, "MULTIPOLYGON")
 
+p2 <- sites_sf[unlist(st_intersects(p1, sites_sf)),]
+p1$site <- p2$site
+st_write(p1, 'shp/voroni.shp', append = TRUE)
+
 ## mapview makes it easy to see the plot on a zoomable map
 library(mapview)
 ##plot the voroni and original sites
-mapview(p1)+sites_sf
-
-plot(p1)
-plot(sites_sf, add = TRUE)
-
-mapview(p1)+sites_sf
-
-
+mapview(p1)
 
