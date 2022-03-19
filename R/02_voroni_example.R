@@ -1,5 +1,5 @@
 library(reshape2)
-library(dplyr)
+library(tidyverse)
 library(sf)
 
 ##define coordinate systems
@@ -38,7 +38,7 @@ site_latlons <- c("57.488519, 10.486884", "57.392246, 10.120313","57.361012, 9.9
                   "56.009482, 12.205189")
 
 sites_sf <- data.frame(site = site_names, id = site_ids, latlon = site_latlons) %>% 
-  mutate(colsplit(latlon, ",", c("lon", "lat"))) %>%
+  dplyr::mutate(colsplit(latlon, ",", c("lon", "lat"))) %>% 
   st_as_sf(coords = c("lat", "lon"), crs = 4326) %>% 
   st_transform(28992) %>% 
   dplyr::select(-latlon)
