@@ -9,8 +9,8 @@ seq <- 1:117
 for (s in seq){
   tryCatch({
     
-  s_yr <- 2009 ## define start year
-  e_yr <- 2021 ## define end year
+  s_yr <- 2021 ## define start year
+  e_yr <- 2022 ## define end year
   
 ## make it a full date
   start_date <- paste0(min(as.numeric(s_yr)), "-01-01")
@@ -61,7 +61,7 @@ flush.console()
 }
   dat <- do.call(rbind, site)
   
-  write.csv(dat, paste0("outputs/", s, '.csv'))
+  write.csv(dat, paste0("outputs/2022/", s, '.csv'))
   }, error=function(e){cat("ERROR :",conditionMessage(e), "\n")})
 }
 

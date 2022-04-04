@@ -104,3 +104,15 @@ library(mapview)
 ##plot the voroni and original sites
 mapview(p1)
 
+## group by municipality
+## load in map
+dk_kom <- st_read("http://data.information.dk/open/dagi/geojson/dagi-ref-kommuner.geojson")
+dk <- select(dk_kom, KOMKODE) %>% st_transform(4326)
+
+sites_sf <- data.frame(site = site_names, id = site_ids, latlon = site_latlons) %>% 
+  dplyr::mutate(colsplit(latlon, ",", c("lon", "lat"))) %>% 
+  st_as_sf(coords = c("lat", "lon"), crs = 4326)
+
+sites_sf$muni <- dk$KOMKODE[st_nearest_feature(sites_sf, dk)]
+
+saveRDS(sites_sf, "sites_muni.RDS")
