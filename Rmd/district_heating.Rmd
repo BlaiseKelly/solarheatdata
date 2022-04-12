@@ -1,8 +1,8 @@
 ---
 title: "Solar thermal - The worlds most misunderstood energy technology?"
 author: "Blaise Kelly"
-date: "04/04/2022"
-output: word_document
+date: "11/04/2022"
+output: html_document
 bibliography: "Wind & Solar.bib"
 ---
 
@@ -12,8 +12,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```
+**Solar thermal is the walking and cycling of the energy world. Low tech, low resource and quick and cheap to build. But in many places, including the UK it has been completely overlooked. I was passing through Denmark and decided to drop in and learn about Denmarks experiences.**
 
-Back in the 1920s car manufacturers were struggling to solve 'engine knock', an annoying and often terminal engine condition. Tetraethyl Lead, or leaded petrol is well known as the substance that solved this. But less well known is that the US chemist Thomas Midgley, credited with this invention, knew that ethyl alcohol was just as effective, but it was ignored as it couldn't be patented and thus was far less profitable. After decades of Lead's health effects being swept under the carpet and investigating scientists smeared, the danger of leaded petrol was finally recognised by governments in the 70's but it still took until well into the 90's for bans to finally come into force. The emissions from Leaded petrol are now regarded as one of the biggest public health and environmental disasters in recent history [@fullerInvisibleKillerRising2018].
+Back in the 1920s car manufacturers were struggling to solve 'engine knock', an annoying and often terminal engine condition. Tetraethyl Lead, or leaded petrol, is well known as the substance that solved this. But less well known is that the US chemist Thomas Midgley, credited with this invention, knew that ethyl alcohol was just as effective, but it was ignored as it couldn't be patented and thus was far less profitable. After decades of Lead's health effects being swept under the carpet and investigating scientists smeared, the danger of leaded petrol was finally recognised by governments in the 70's but it still took until well into the 90's for bans to finally come into force. The emissions from Leaded petrol are now regarded as one of the biggest public health and environmental disasters in recent history [@fullerInvisibleKillerRising2018].
 
 In a similar way the the push for decarbonisation and the scramble to divest from Russian gas is dominated by high tech solutions, from nuclear fusion and fuel cells to batteries and green hydrogen, attracting enormous investment pots. Yet all these solutions have one thing in common, they are all focused on electricity, which only accounts for around 20% of our total energy consumption. Without a doubt electricity is becoming an increasingly significant energy medium, but like with engine knock are we missing a cheaper, simpler and far more environmentally friendly solution to our energy needs? Solar Thermal: using the suns energy to directly heat water.
 
@@ -23,7 +24,7 @@ In 2020 501GW of low temperature solar thermal capacity was in operation around 
 
 Unlike with solar PV, where 15-20% of solar irradiation is converted to electricity via the photoelectric effect, solar thermal collectors pass water through comparatively simple collectors, made of only plastic and annealed or blown glass. These panals can be up to 80% efficient in utilising incident sunlight. The Dutch company [Resolar](https://www.resolar.nl/) estimates that whilst a solar PV system can generate 155 kWh/m$^2$ annually, a flat plate solar thermal collector can provide 495 kWh/m2 and a vacuum tube system 610 kWh/m2, nearly 4 times PVs energy.
 
-Possibly one of Denmark's best kept secrets is its expanding district solar thermal district heating industry. 60% of Danish households are connected to a district heating network and 61% of that energy is supplied by solar and wind, with a target for 100% by 2030. And the technology has barely changed since the first solar district heating system was installed in Sweden in the late 70's supplying 100 houses in town of Vester Nebel[@putzIntegrationLargeScaleSolar2021]. Similarly devoid of lucrative oil fields, Denmark followed suit a few years later and has quietly embraced the technology, culminating in the opening the worlds largest plant at Sikeborg in 2017, which supplies 20% of the annual heat requirements to 21,000 houses. This took the total solar district heating capacity to 1GW, cementing it's place as the European leader in the technology. The figure below shows how the industry has taken off in the past decade/The generation by municipality in 2020.
+Possibly one of Denmark's best kept secrets is its expanding district solar thermal district heating industry. 60% of Danish households are connected to a district heating network and 61% of that energy is supplied by solar and wind, with a target for 100% by 2030. And the technology has barely changed since the first solar district heating system was installed in Sweden in the late 70's supplying 100 houses in town of Vester Nebel[@putzIntegrationLargeScaleSolar2021]. Similarly devoid of lucrative oil fields, Denmark followed suit a few years later and has quietly embraced the technology, culminating in the opening the worlds largest plant at Sikeborg in 2017, which supplies 20% of the annual heat requirements to 21,000 houses. This took the total solar district heating capacity to 1GW, cementing it's place as the European leader in the technology. The figure below shows how the industry has taken off in the past decade, data from [@solarvarmedatadk_solvarmedatadk_2022].
 
 ![](../R/plots/dk_muni_heat.gif)
 
@@ -60,7 +61,7 @@ Despite continental Europe's dominance of the market, probably the most famous s
 
 Low temperature thermal storage, like solar heat collectors are a low tech, low resource and environmentally benign technology that can quickly and easily be installed to unlock local energy sources that would otherwise be lost. The systems in Denmark are basically holes in the ground, lined with plastic and filled with water, or boreholes drilled into the ground. Unfortunately the cost is yet to reflect this simplicity, in large part due to the little that has been invested in it. According to IEA data on research budgets, UK energy research spending since 1974 has been dominated by nuclear fusion and fission with 13.6 billion being spent, nearly 6 times more than renewable energy, which has received a similar sum to fossil fuel R&D. Thermal energy storage has received less than 1 million equating to £21,000 a year compared with £295 million for nuclear [@ieaEnergyTechnologyRD2022].
 
-This simplicity hides the enormous potential. A report last year estimated that the UK had 4.9 TWh (17.9PJ) waste heat potential per annum within 10km of a district heating network [@manzDecarbonisingDistrictHeating2021]. The enormous amount of summer heat generated from solar thermal systems could easily be used in industrial processes. The total global heat demand for low and medium temperature applications accounts for 44 EJ (exajoule) globally (≈12,222 TWh). The chart below shows this heat demand in selected industries.
+This simplicity hides the enormous potential. A report last year estimated that the UK had 4.9 TWh (17.9PJ) waste heat potential per annum within 10km of a district heating network [@manzDecarbonisingDistrictHeating2021]. The enormous amount of summer heat generated from solar thermal systems could easily be used in industrial processes. The total global heat demand for low and medium temperature applications accounts for 44 EJ (exajoule) globally (≈12,222 TWh). The chart below shows this heat demand for selected industries.
 
 ![](https://www.solar-payback.com/wp-content/uploads/2017/07/Heat-Demand_ppt.jpg)
 
