@@ -34,7 +34,7 @@ Since hearing about the Danish systems a few years ago I had been eager to find 
 
 Chugging through the lush countryside on a diesel train, a timetable discrepancy led to a conversation with an impressively knowledgeable journalist on his weekly commute back to Aarlborg from Copenhagen to retrain in PR due to the collapse of the print news industry. To my relief he confirmed solar thermal was indeed a big deal in Denmark, explaining one of the driving factors for its popularity was local opposition to onshore wind turbines. It seemed like Denmark wasn't that disimilar to the UK.
 
-![Vra with the old water tower in the backgroundgammelt vandtårn https://arkiv.dk/vis/3288517](media/20211004_191921.jpg)
+![Vrå with the old water tower in the backgroundgammelt vandtårn https://arkiv.dk/vis/3288517](media/20211004_191921.jpg)
 
 I was met by Finn, at the main control centre of the towns district heating provider [Vrå Varmeværk](https://www.vraa-varmevaerk.dk/), a short walk from the main train station. After heading out to the site, he proudly showed me round the immaculate facility and gave the lowdown on the system, which has been operational since 1959 and now serves most of the 2,500 residents. Originally supplied by oil it gradually switched to natural gas and electricity over the decades and in 2015 13,100m$^2$ of solar thermal collectors, manufactured 30km south of the town by [Aarlborg CSP](https://www.aalborgcsp.com/), were connected on a 40,000m$^2$ piece of farmland to the north of the town.  It is now the 35th largest solar district heating system in Europe [@dalenbackRankingListEuropean]. As part of this scheme an additional 3,000m$^2$ of hot water storage was added to the 750m$^2$ tank already in the town centre. The system, including connection to the existing network, cost 6.5 million Euros and produces 6,300 MWh of heat annually, saving the town 570,000m$^3$ of natural gas imports each year. The water tanks also have electrical coils installed, with a total capacity of a 7MW to make use of 'plunge pricing' events where they can get paid to take abundant wind electricity off the grid, a common event in winter when solar generation is at it's lowest.
 
@@ -75,14 +75,14 @@ Tackling heat demand is crucial to reducing energy costs, CO~2~ and pollutant em
 
 
 ## Useful Links:
- -IEA solar heating and cooling prgramme  https://www.iea-shc.org/  
- -data from solar district heating plants https://solvarmedata.dk/  
+ * IEA solar heating and cooling prgramme  https://www.iea-shc.org/  
+ * data from solar district heating plants https://solvarmedata.dk/  
  - good reference site for information on solar thermal and district heating https://www.solar-district-heating.eu/dk-monitoring-2/  
-- District heating school https://fjernvarmeskolen.dk/  
+- district heating school https://fjernvarmeskolen.dk/  
 - current projects in Europe https://www.solar-district-heating.eu/de/solites-current-projects/  
-- Danish District heating association https://www.danskfjernvarme.dk/aktuelt  
-- Economics of heat storage https://solarthermalworld.org/news/seasonal-pit-heat-storage-cost-benchmark-30-eurm3/  
-- https://irena.org/publications/2021/March/Integrating-low-temperature-renewables-in-district-energy-systems  
+- Danish district heating association https://www.danskfjernvarme.dk/aktuelt  
+- economics of heat storage https://solarthermalworld.org/news/seasonal-pit-heat-storage-cost-benchmark-30-eurm3/  
+- integrating renewables into district heating https://irena.org/publications/2021/March/Integrating-low-temperature-renewables-in-district-energy-systems  
 - solar heat for industrial processes https://www.solar-payback.com/wp-content/uploads/2017/07/Solar-Heat-for-Industry-Solar-Payback-April-2017.pdf  
 - guidelines for policymakers https://vbn.aau.dk/ws/portalfiles/portal/406326231/Integrating_low_temperature_renewables_in_district_energy_systems_Guidelines_for_policymakers_2021.pdf  
 
